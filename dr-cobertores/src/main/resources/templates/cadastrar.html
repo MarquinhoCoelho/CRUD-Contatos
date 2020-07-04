@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+
+     
+
+        <br><h1 class="text-center">Cadastro - Dr.Cobertores</h1>
+        <form action="/cadastrar" class="text-center" method="POST">
+        
+            <div class="form-group ">
+                <label for="nome">Tipo<input class="form-control" type="text" name="nome" id="nome" th:value="${bebida.nome}" placeholder="lensol, manta, ceda..."></label>
+            </div>
+
+            <div class="form-group">
+                <label for="descricao">Algodão(%)<input class="form-control" type="text" name="descricao" id="descricao" th:value="${bebida.descricao}" placeholder=""></label>
+            </div>
+
+            <div class="form-group">
+                <label for="fabricante">Tamanho<input class="form-control" type="text" name="fabricante" id="fabricante"th:value="${bebida.fabricante}" placeholder="Casal, solteiro, criança"></label>
+            </div>
+        
+            <div class="form-group">
+                <label for="teor">Cor<input class="form-control" type="text" name="teor" id="teor"th:value="${bebida.teor}"></label>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="preco">Estampa<input class="form-control" type="text" name="preco" id="preco"th:value="${bebida.preco}"></label>
+            </div>
+            
+            <input type="hidden" name="id" th:value="${bebida.id}">
+
+            <input class="btn btn-primary " type="submit" value="Enviar">
+
+        </form>
+
+
+        <a href="./">Voltar</a>
+    </div>
+    <br><br><br>
+    <picture>
+        <source srcset="https://cdn.awsli.com.br/1310/1310045/arquivos/1538.jpg" type="image/svg+xml">
+        <img src="https://cdn.awsli.com.br/1310/1310045/arquivos/1538.jpg" class="img-fluid img-thumbnail" alt="">
+      </picture>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

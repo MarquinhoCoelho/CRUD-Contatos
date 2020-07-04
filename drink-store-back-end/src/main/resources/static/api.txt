@@ -1,0 +1,12 @@
+GET / 
+    retornar lista de bebidas
+
+GET/:id
+    retornar os dados da bebida "id"
+
+POST / 
+    Parametros: id, nome, descricao, fabricante, teor, preco
+    Alterar a bebida com o "id"
+
+GET /deletar/:id
+    Apagar a bebida "id"
